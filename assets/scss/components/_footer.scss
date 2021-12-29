@@ -1,0 +1,49 @@
+//  footer
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    padding: 15px 30px;
+    box-shadow: 0 -1px 4px #ddd ;
+    // position: fixed;
+    // bottom: 0;
+    // background-color: $white-color;
+    text-align: center;
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+     
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            &:not(:first-of-type) {
+                margin-left: 15px;
+            }
+            
+            a {
+                color: $first-color;
+                 
+                &:hover {
+                    color: $second-color;
+                }
+            }
+        }
+    }
+
+    
+
+}

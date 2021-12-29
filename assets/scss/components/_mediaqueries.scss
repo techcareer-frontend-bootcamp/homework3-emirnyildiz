@@ -1,0 +1,74 @@
+@media screen and (min-width: 768px) {
+    .nav {
+
+        &__menu {
+            margin-left: auto;
+        }
+
+        &__list {
+            display: flex;
+        }
+
+        &__item {
+            margin-right: 15px;
+
+            &:not(:last-of-type) {
+                margin-bottom: 0;
+            }
+        }
+
+        &__toggle {
+            display: none;
+        }
+
+    }
+
+    .home {
+        grid-template-rows: 6fr 1fr;
+        grid-template-columns: min-content;
+        grid-template-areas: "data img" "scroll scroll";
+        align-content: center;
+        justify-content: center;
+        column-gap: 4rem;
+
+        &__data {
+            grid-area: data;
+            padding: 0;
+            align-self: center;
+            text-align: initial; 
+        }
+
+        &__img {
+            grid-area: img;
+            align-self: center;
+
+            & img {
+                width: 114px;
+                height: 248px;
+            }
+        }
+
+        &__scroll {
+            grid-area: scroll;
+            padding-bottom: 6rem;
+        }
+    }
+
+    .details {
+        column-gap: 4rem;
+
+        &__box {
+            margin-bottom: 2rem;
+        }
+
+        &__img {
+            img {
+                width: 300px;
+            }
+        }
+    }
+
+
+
+}
+ 
